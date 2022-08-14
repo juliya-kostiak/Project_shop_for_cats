@@ -1,0 +1,23 @@
+{% extends 'pet_shop/base.html' %}
+{% load static %}
+
+{% block title_page %}
+<title>Продукт</title>
+{% endblock title_page %}
+
+{% block content %}
+<section class="main-section paddind" id="Portfolio">
+	<div class = 'container'>
+		<h2>{{item.name}}</h2>
+		<div class = 'b'>
+			<img src="{{ item.image.url }}" width = "370px">
+		</div>
+		<div class = 'b'>
+			<p>{{ item.description }}</p>
+			<p>Цена: {{ item.price }} руб.</p>
+		</div>
+		<a class="link animated fadeInUp delay-1s servicelink" href="{% url 'shop' %}">К каталогу</a>
+	</div>
+
+</section>
+{% endblock content %}

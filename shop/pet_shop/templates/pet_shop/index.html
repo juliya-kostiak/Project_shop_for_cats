@@ -1,0 +1,149 @@
+{% extends 'pet_shop/base.html' %}
+{% load static %}
+
+{% block title_page %}
+<title>Главная страница</title>
+{% endblock title_page %}
+
+{% block content %}
+<header class="header" id="header">
+	<div class="container">
+		<figure class="logo animated fadeInDown delay-07s">
+			<a href="#"><img src="{% static 'img/logo-new.png' %}" alt=""></a>
+		</figure>
+		<h1 class="animated fadeInDown delay-07s">Добро пожаловать в CatLand!</h1>
+		<ul class="we-create animated fadeInUp delay-1s">
+			<li>Ваши котики - наша забота</li>
+		</ul>
+		<a class="link animated fadeInUp delay-1s servicelink" href="{% url 'shop' %}">К каталогу</a>
+	</div>
+</header>
+
+<section class="main-section alabaster">
+	<!--main-section alabaster-start-->
+	<div class="container">
+		<div class="row">
+			<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+				<img src="{% static 'img/cat2.jpg' %}" alt="">
+			</figure>
+			<div class="col-lg-7 col-sm-8 featured-work">
+				<h2>О магазине</h2>
+				<p class="padding-b">CatLand приглашает за покупками владельцев котиков. Тут вы можете купить не только корм, но и вещи, необходимые для транспортировки и игр. Помимо этого, в этом месте вам будут предложены всевозможные приспособления и средства для ухода за питомцем. При помощи них можно вычесывать шерсть, сделать модную или гигиеническую стрижку, подстричь когти и многое другое.</p>
+				<div class="featured-box">
+					<div class="featured-box-col1 wow fadeInRight delay-02s">
+						<i class="fa fa-magic"></i>
+					</div>
+					<div class="featured-box-col2 wow fadeInRight delay-02s">
+						<h3>Высокое качество</h3>
+						<p>Мы работаем только с проверенными производителями. Контроль качества - наша обязанность, чтобы ваши питомцы чувствовали себя хорошо. </p>
+					</div>
+				</div>
+				<div class="featured-box">
+					<div class="featured-box-col1 wow fadeInRight delay-04s">
+						<i class="fa fa-gift"></i>
+					</div>
+					<div class="featured-box-col2 wow fadeInRight delay-04s">
+						<h3>Акции и постоянные розыгрыши</h3>
+						<p>Действует программа лояльности для постоянных клиентов. Участвуя в розыгрышах, вы можете выиграть нужные призы или купоны на определенную сумму, на которую в дальнейшем сможете приобрети товары в нашем магазине.</p>
+					</div>
+				</div>
+				<div class="featured-box">
+					<div class="featured-box-col1 wow fadeInRight delay-06s">
+						<i class="fa fa-dashboard"></i>
+					</div>
+					<div class="featured-box-col2 wow fadeInRight delay-06s">
+						<h3>Быстрая обработка заказов</h3>
+						<p>Наши менеджеры постоянно находятся на связи. Они могут ответить на все интересующие вас вопросы и помочь оформить заказ.</p>
+					</div>
+				</div>
+				<a class="Learn-More" href="#">Learn More</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="main-section" id="service">
+	<div class="container">
+		<h2>Категории</h2>
+		<h6>Мы предлагаем товары по следующим категориям</h6>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+				<div class="service-list">
+					<div class="service-list-col1">
+						<i class="fa">
+							<img src="{% static 'img/i1.png' %}" alt="" height = "40px">
+						</i>
+					</div>
+					<div class="service-list-col2">
+						<h3>корма & лакомства </h3>
+						<p>Питательные корма от лучших производителей, разработанные с учётом физиологических потребностей питомцев</p>
+					</div>
+				</div>
+				<div class="service-list">
+					<div class="service-list-col1">
+						<i class="fa">
+							<img src="{% static 'img/i2.png' %}" alt="" height = "40px">
+						</i>
+					</div>
+					<div class="service-list-col2">
+						<h3>домики, лежанки & переноски</h3>
+						<p>Ваши любимцы точно оценят мягкие лежанки и уютные домики</p>
+					</div>
+				</div>
+				<div class="service-list">
+					<div class="service-list-col1">
+						<i class="fa">
+							<img src="{% static 'img/i3.png' %}" alt="" height = "40px">
+						</i>
+					</div>
+					<div class="service-list-col2">
+						<h3>средства по уходу</h3>
+						<p>Средства помогут сделать уход не только необходиой продедурой, но и приятной</p>
+					</div>
+				</div>
+				<div class="service-list">
+					<div class="service-list-col1">
+						<i class="fa">
+							<img src="{% static 'img/i4.png' %}" alt="" height = "40px">
+						</i>
+					</div>
+					<div class="service-list-col2">
+						<h3>лотки & наполнители </h3>
+						<p>Удобный лоток с качественным наполнителем = счастливые питомцы</p>
+					</div>
+				</div>
+				<div class="service-list">
+					<div class="service-list-col1">
+						<i class="fa">
+							<img src="{% static 'img/i5.png' %}" alt="" height = "40px">
+						</i>
+					</div>
+					<div class="service-list-col2">
+						<h3>другое </h3>
+						<p>Другие товары вы можете найти здесь</p>
+					</div>
+				</div>
+			</div>
+			<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+				<img src="{% static 'img/cat1.jpg' %}" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<section class="business-talking">
+	<div class="container">
+		<h2>Let’s Make Your Cat Happy.</h2>
+		<a class="link animated fadeInUp delay-1s servicelink" href="{% url 'shop' %}">К каталогу</a>
+	</div>
+</section>
+
+
+
+
+
+{% endblock content%}
